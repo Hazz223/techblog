@@ -1,0 +1,23 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "Tech blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hazz223/techblog.git"
+  },
+  "author": "Harry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hazz223/techblog/issues"
+  },
+  "homepage": "https://github.com/Hazz223/techblog#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mustache": "^2.2.1"
+  }
+}
