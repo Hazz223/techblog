@@ -3,3 +3,19 @@
   text-align: center;
   margin: 50px;
 }
+
+.height-full {
+  height: 100vh;
+}
+
+.title__anchor{
+  text-decoration: none;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+.title__anchor:hover{
+  text-decoration: none;
+  color: black;
+
+}

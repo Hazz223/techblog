@@ -4,21 +4,27 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="title__h1">tech.harrywinser.com</h1>
+    <div class="container-fluid height-full bg-dark">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="title__h1">
+            <a class="title__anchor" href="/">tech.harrywinser.com</a>
+          </h1>
+        </div>
       </div>
-
     </div>
 
-    <div class="row">
-      <p>
-        Some cool ass content needs to go here!
-      </p>
-     </div>
+    <div class="row content__row">
+      {{#articles}}
+        <div class="row">
+          <h2>{{title}}</h2>
+          <div class="col-sm-12">
+            {{{data}}}
+          </div>
+        </div>
+      {{/articles}}
+    </div>
   </div>
-
   {{>scripts}}
 </body>
-
 </html>
