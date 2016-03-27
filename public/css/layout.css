@@ -5,25 +5,33 @@
 
 .title__anchor{
   text-decoration: none;
-  color: black;
   font-family: 'Lato', sans-serif;
 }
 
 .title__anchor:hover {
   text-decoration: none;
-  color: black;
 }
 
 .title__header__row {
-  font-size: 50px;
-  text-align: center;
-  margin: 50px;
+  color: inherit;
 }
 
-.title__header__main {
-  font-size: 100px;
+.title__h1__main {
+  font-size: 350px;
+  color: #e7e7e7;
 }
 
-.title__header__subheader{
+.title__h1__subheader{
   font-size: 50px;
+
+  color: #e7e7e7;
+}
+
+.title__h1__subheader__container{
+  margin-left: 23px;
+}
+
+.header__container__background {
+  background: #3e4243;
+  filter: blur(5px);
 }
