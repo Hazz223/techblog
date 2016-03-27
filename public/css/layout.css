@@ -1,15 +1,19 @@
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 .height-full {
   height: 100vh;
 }
 
 .title__anchor{
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
 }
 
 .title__anchor:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #e7e7e7;
 }
 
 .title__header__row {
@@ -23,7 +27,6 @@
 
 .title__h1__subheader{
   font-size: 50px;
-
   color: #e7e7e7;
 }
 
@@ -34,4 +37,57 @@
 .header__container__background {
   background: #3e4243;
   filter: blur(5px);
+}
+
+.title__social-buttons__container{
+  margin-top: 35px;
+}
+
+.content__container{
+  width: 750px;
+  font-size: 15px;
+}
+
+.post-image{
+  width: 100%;
+  height: 100%;
+}
+
+.post-image-container-square {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.post-image-container-tall{
+  width: 310px;
+  height: 390px;
+  margin: 0 auto;
+}
+
+.post-image-container-wide {
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.content{
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+
+.content__data{
+  font-size: 18px;
+}
+
+.content__header{
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.content__date{
+  text-align: center;
+  margin-top: 50px;
 }
