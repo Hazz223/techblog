@@ -2,18 +2,19 @@
 <html>
 {{>header}}
 <body>
+  {{#articles}}
   <div class="container-fluid height-full header__container__background">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 title__header__row">
           <h1>
-            <a href='/' class="title__anchor title__h1__main">tech.</a>
+            <a href="/article/{{clean_title}}" class="title__anchor article__header">{{title}}</a>
           </h1>
         </div>
           <div class='title__h1__subheader__container'>
             <div>
               <h2>
-                <a class="title__anchor title__h1__subheader" href="http://www.harrywinser.com">harrywinser.com</a>
+                <a class="title__anchor title__h1__subheader" href="/">tech.harrywinser.com</a>
               </h2>
             </div>
             <div class="title__social-buttons__container">
@@ -33,11 +34,7 @@
     </div>
 
     <div class="container content__container">
-        {{#articles}}
           <div class="row content">
-            <h2 class='content__header'>
-              <a href="/article/{{clean_title}}" class="content__title__anchor">{{title}}</a>
-            </h2>
             <div class="col-sm-12 content__data">
               {{{data}}}
             </div>
@@ -45,9 +42,9 @@
               Posted {{{date}}}
             </div>
           </div>
-        {{/articles}}
     </div>
   </div>
+  {{/articles}}
   {{>scripts}}
 </body>
 </html>

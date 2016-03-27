@@ -22,6 +22,15 @@ app.get('/pokemon', function(req, res){
   res.send("Pikachu, i choose you!");
 });
 
+app.get('/article/:name', function(req, res) {
+  request('http://www.harrywinser.com/articles/cleantitle/' + req.params.name, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var data = JSON.parse(body);
+      res.render('article', data);
+    }
+  });
+});
+
 // This is the actual app running!
 app.listen(3000, function () {
   console.log('tech.harrywinser.com listening on port 3000!');

@@ -9,6 +9,7 @@ body{
 
 .title__anchor{
   text-decoration: none;
+  color: white;
 }
 
 .title__anchor:hover {
@@ -22,12 +23,10 @@ body{
 
 .title__h1__main {
   font-size: 350px;
-  color: #e7e7e7;
 }
 
 .title__h1__subheader{
   font-size: 50px;
-  color: #e7e7e7;
 }
 
 .title__h1__subheader__container{
@@ -80,6 +79,16 @@ body{
   font-size: 18px;
 }
 
+.content__title__anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.content__title__anchor:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .content__header{
   font-size: 45px;
   text-align: center;
@@ -90,4 +99,8 @@ body{
 .content__date{
   text-align: center;
   margin-top: 50px;
+}
+
+.article__header{
+  font-size: 120px;
 }
