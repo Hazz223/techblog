@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Hazz223/techblog#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "mustache-express": "^1.2.2",
+    "request": "^2.69.0"
   }
 }
