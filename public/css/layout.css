@@ -25,6 +25,11 @@ body{
   font-size: 350px;
 }
 
+.title__h1__main:hover{
+  font-size: 350px;
+  text-decoration:none;
+}
+
 .title__h1__subheader{
   font-size: 50px;
 }
