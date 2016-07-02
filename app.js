@@ -12,6 +12,8 @@ app.get('/', function (req, res) {
 
   request('http://api.harrywinser.com/article/type/technology', function (error, response, body) {
 
+    console.log("body");
+
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
       res.render('index', data);
@@ -25,6 +27,8 @@ app.get('/pokemon', function(req, res){
 
 app.get('/article/:name', function(req, res) {
   request('http://api.harrywinser.com/article/' + req.params.name, function (error, response, body) {
+
+    console.log(body)
 
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
