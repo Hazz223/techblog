@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public')); // set static folder
 
 app.get('/', function (req, res) {
 
-  request('http://www.harrywinser.com/articles/type/blog', function (error, response, body) {
+  request('http://api.harrywinser.com/article/type/technology', function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
       res.render('index', data);
@@ -23,7 +23,7 @@ app.get('/pokemon', function(req, res){
 });
 
 app.get('/article/:name', function(req, res) {
-  request('http://www.harrywinser.com/articles/cleantitle/' + req.params.name, function (error, response, body) {
+  request('http://api.harrywinser.com/article/cleantitle/' + req.params.name, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
       res.render('article', data);
