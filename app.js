@@ -11,9 +11,14 @@ app.use(express.static(__dirname + '/public')); // set static folder
 app.get('/', function (req, res) {
 
   request('http://api.harrywinser.com/article/type/technology', function (error, response, body) {
+
+    console.log(error);
+    console.log(response);
+    console.log(body);
+
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
-      res.render('index', data);
+      res.render('index', data.content);
     }
   });
 });
@@ -24,14 +29,19 @@ app.get('/pokemon', function(req, res){
 
 app.get('/article/:name', function(req, res) {
   request('http://api.harrywinser.com/article/cleantitle/' + req.params.name, function (error, response, body) {
+
+    console.log(error);
+    console.log(response);
+    console.log(body);
+
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
-      res.render('article', data);
+      res.render('article', data.content);
     }
   });
 });
 
 // This is the actual app running!
-app.listen(3000, function () {
+app.listen(80, function () {
   console.log('tech.harrywinser.com listening on port 3000!');
 });
