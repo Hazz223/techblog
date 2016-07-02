@@ -12,13 +12,9 @@ app.get('/', function (req, res) {
 
   request('http://api.harrywinser.com/article/type/technology', function (error, response, body) {
 
-    console.log(error);
-    console.log(response);
-    console.log(body);
-
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
-      res.render('index', data.content);
+      res.render('index', data);
     }
   });
 });
@@ -28,15 +24,11 @@ app.get('/pokemon', function(req, res){
 });
 
 app.get('/article/:name', function(req, res) {
-  request('http://api.harrywinser.com/article/cleantitle/' + req.params.name, function (error, response, body) {
-
-    console.log(error);
-    console.log(response);
-    console.log(body);
+  request('http://api.harrywinser.com/article/' + req.params.name, function (error, response, body) {
 
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
-      res.render('article', data.content);
+      res.render('article', data);
     }
   });
 });

@@ -33,7 +33,7 @@
     </div>
 
     <div class="container content__container">
-        {{#articles}}
+        {{#content}}
           <div class="row content">
             <h2 class='content__header'>
               <a href="/article/{{clean_title}}" class="content__title__anchor">{{title}}</a>
@@ -45,7 +45,7 @@
               Posted {{{date}}}
             </div>
           </div>
-        {{/articles}}
+        {{/content}}
     </div>
   </div>
   {{>scripts}}
