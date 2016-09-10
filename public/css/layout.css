@@ -40,7 +40,6 @@ body{
 
 .header__container__background {
   background: #3e4243;
-  filter: blur(5px);
 }
 
 .title__social-buttons__container{
