@@ -1,4 +1,4 @@
-FROM alexellis2/node4.x-arm:v6
+FROM hazz22/jessie-node
 
 COPY public public
 COPY views views
