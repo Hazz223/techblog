@@ -34,6 +34,6 @@ app.get('/article/:name', function(req, res) {
 });
 
 // This is the actual app running!
-app.listen(80, function () {
+app.listen(3000, function () {
   console.log('tech.harrywinser.com listening on port 3000!');
 });
